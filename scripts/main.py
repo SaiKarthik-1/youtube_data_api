@@ -1,6 +1,6 @@
 # This is a sample Python script.
 import sys
-from youtube_data import verify_channel
+from youtube_data import process_data
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
@@ -12,7 +12,7 @@ def main():
     channels = channels.split(",")
     channels = [x.strip() for x in channels]
     for i in channels:
-        verify_channel(i)
+        process_data(i)
 
 
 # Press the green button in the gutter to run the script.
